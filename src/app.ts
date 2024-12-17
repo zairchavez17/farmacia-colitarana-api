@@ -4,8 +4,7 @@ import morgan from 'morgan';
 const app: Application = express();
 
 app.get('/saludar', (req: Request, res: Response) => { 
-    console.log('Hola estoy saludando'); 
-    res.json({ nombre: 'Diego Fernando', apellido: 'Baes' });
+     res.json({ nombre: 'Diego Fernando', apellido: 'Baes' });
 });
 
 app.use(morgan('dev'));
